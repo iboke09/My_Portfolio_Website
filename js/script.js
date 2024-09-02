@@ -137,3 +137,15 @@ dali.addEventListener("change", function () {
   navbar.classList.remove("active");
   menuIcon.classList.remove("bx-x");
 });
+
+
+
+const forms = document.querySelectorAll('form');
+
+forms.forEach(form => {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    console.log('Form submission prevented');
+    alert("message has been sent successfully.")
+  });
+});
